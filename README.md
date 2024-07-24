@@ -4,7 +4,11 @@ Bode Plot Using HTML, CSS and javascript.
 ## Description
 
 ***BodePlot*** is a Bode diagram plotter made with using HTML, CSS and javascript.
-	
+
+## How to Use
+
+Place the **index.html**, **styles.css**, and **script.js** files in the same folder, and then open the **index.html** file in a web browser.
+
 ## Project status
 
   This project is solely for the purpose of research and development. There is no intention of using it for commercial purposes. The project was stopped completely.  
