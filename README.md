@@ -35,7 +35,7 @@ Place the **index.html**, **styles.css**, and **script.js** files in the same fo
   
 ![](https://github.com/user-attachments/assets/4ba13dcd-6259-4324-9ef6-8b19c7571161)
 
-- You can copy image as a png file to use in ypur documents
+- You can copy image as a png file to use in your documents
 
 ![](https://github.com/user-attachments/assets/57fdb59b-66eb-49bd-aba2-903c873aa07e)
 
