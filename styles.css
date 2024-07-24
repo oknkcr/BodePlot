@@ -1,0 +1,96 @@
+body {
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: auto; /* Ekranın kaydırılabilir olmasını sağlar */
+}
+
+.container {
+    background-color: #1E1E1E;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 1200px; /* Genişliği artırdık */
+    width: 100%;
+    overflow-x: auto; /* Container içeriği genişledikçe yatay kaydırma sağlar */
+}
+
+h1 {
+    color: #BB86FC;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input {
+    background-color: #333;
+    color: #E0E0E0;
+}
+
+button {
+    background-color: #BB86FC;
+    color: #121212;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3700B3;
+}
+
+#transfer-function-list {
+    margin: 20px 0;
+    max-height: 300px; /* Liste yüksekliğini sınırladık */
+    overflow-y: auto; /* Liste içinde kaydırmayı sağlar */
+}
+
+.transfer-function-item {
+    background-color: #333;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transfer-function-item button {
+    background-color: #CF6679;
+    color: #121212;
+    margin-left: 10px;
+    padding: 3px 6px; /* Butonu daha da küçültüyoruz */
+    font-size: 0.8em; /* Font boyutunu küçültüyoruz */
+}
+
+.transfer-function-item button:hover {
+    background-color: #B00020;
+}
+
+#transfer-function-formula {
+    margin: 20px 0;
+    font-size: 1.1em;
+}
+
+canvas {
+    background-color: #1E1E1E;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
