@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bode Plot</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@1.2.1"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Bode Plot</h1>
+        <form id="transfer-function-form">
+            <label for="plot-name">Plot Name:</label>
+            <input type="text" id="plot-name" name="plot-name" placeholder="e.g., Plot 1">
+            <label for="gain">Gain (scalar):</label>
+            <input type="number" id="gain" name="gain" placeholder="e.g., 1" step="any">
+            <label for="numerator">Numerator coefficients (comma separated):</label>
+            <input type="text" id="numerator" name="numerator" placeholder="e.g., 1, 0.5">
+            <label for="denominator">Denominator coefficients (comma separated):</label>
+            <input type="text" id="denominator" name="denominator" placeholder="e.g., 1, 2, 1">
+            <label for="freq-start">Start Frequency (Hz):</label>
+            <input type="number" id="freq-start" name="freq-start" placeholder="e.g., 0.1" step="any">
+            <label for="freq-end">End Frequency (Hz):</label>
+            <input type="number" id="freq-end" name="freq-end" placeholder="e.g., 10000" step="any">
+            <button type="button" id="add-plot" class="add-plot-button">Add Plot</button>
+        </form>
+        <div id="transfer-function-list"></div>
+        <div id="transfer-function-formula"></div>
+        <button id="plot-all" class="plot-all-button">Plot All</button>
+        <canvas id="magnitude-chart"></canvas>
+        <canvas id="phase-chart"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
